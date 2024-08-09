@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.*?>
+
+<AnchorPane fx:id="anPane" prefHeight="640" prefWidth="646.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dif.eventos.EventosAsistentesFormController">
+   <children>
+      <Label fx:id="lblTitulo" layoutX="68.0" layoutY="43.0" text="Generar Invitación">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnGuardar" layoutX="176.0" layoutY="373.0" mnemonicParsing="false" onAction="#doSave" prefHeight="25.0" prefWidth="85.0" text="Guardar" />
+      <Button fx:id="btnCancelar" layoutX="390.0" layoutY="373.0" mnemonicParsing="false" onAction="#doCancel" prefHeight="25.0" prefWidth="85.0" text="Cancelar" />
+      <Label layoutX="299.0" layoutY="184.0" text="Asistente" />
+      <SearchableComboBox fx:id="cmbAsistente" layoutX="92.0" layoutY="213.0" prefHeight="25.0" prefWidth="462.0" />
+
+   </children>
+</AnchorPane>

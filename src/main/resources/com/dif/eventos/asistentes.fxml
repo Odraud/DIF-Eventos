@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="asistentesPane" prefHeight="640.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dif.eventos.AsistentesController">
+   <children>
+      <Label layoutX="25.0" layoutY="23.0" text="Asistentes">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableAsistentes" layoutX="25.0" layoutY="72.0" prefHeight="465.0" prefWidth="599.0">
+
+        <columns>
+          <TableColumn fx:id="nombreAsistenteCol" prefWidth="73.0" text="Nombre">
+              <cellValueFactory><PropertyValueFactory property="pNombreAst" /></cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="sNombreAsistenteCol" minWidth="0.0" prefWidth="121.0" text="Segundo Nombre">
+              <cellValueFactory><PropertyValueFactory property="sNombreAst" /></cellValueFactory>
+          </TableColumn>
+            <TableColumn fx:id="apellidoPAsistenteCol" minWidth="0.0" prefWidth="126.0" text="Apellido Paterno">
+                <cellValueFactory><PropertyValueFactory property="pApellidoAst" /></cellValueFactory>
+            </TableColumn>
+          <TableColumn fx:id="apellidoMAsistenteCol" minWidth="0.0" prefWidth="121.0" text="Apellido Materno">
+              <cellValueFactory><PropertyValueFactory property="mApellidoAst" /></cellValueFactory>
+          </TableColumn>
+            <TableColumn fx:id="correoAsistenteCol" minWidth="0.0" prefWidth="69.0" text="Correo">
+                <cellValueFactory><PropertyValueFactory property="correoAst" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="organizadorCol" prefWidth="42.0" text="Organizador" />
+            <TableColumn fx:id="asistenteCol" prefWidth="46.0" text="Asistente" />
+        </columns>
+      </TableView>
+      <Button layoutX="79.0" layoutY="566.0" mnemonicParsing="false" onAction="#doCreate" prefHeight="25.0" prefWidth="126.0" text="Crear" />
+      <Button layoutX="262.0" layoutY="566.0" mnemonicParsing="false" onAction="#doModify" prefHeight="25.0" prefWidth="126.0" text="Modificar" />
+      <Button layoutX="454.0" layoutY="566.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="25.0" prefWidth="126.0" text="Eliminar" />
+   </children>
+</AnchorPane>
