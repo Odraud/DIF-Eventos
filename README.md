@@ -11,7 +11,9 @@
 
 <p> La solucion propuesta fue desarrollar un programa capaz de crear eventos en el cual se establezca la fecha del evento, con el cual ir registrando a los participantes y asi poder enviar una notificacion a los participantes de que el evento esta proximo. </p>
 
-**1. [Requerimientos](/Requerimientos)**
-**2. [Instalacion](/Instalacion)**
-**3. [Configuracion](/Configuracion)**
-
+* **[Requerimientos](/Requerimientos)**
+* **[Instalacion](/Instalacion)**
+* **[Configuracion](/Configuracion)**
+* **[Uso](/Uso)**
+* **[Contribucion](/Contribucion)**
+* **[RoadMap](/RoadMap)**
