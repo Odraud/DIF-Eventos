@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="eventosPane" prefHeight="640.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dif.eventos.EventosController">
+   <children>
+      <Label layoutX="25.0" layoutY="23.0" text="Eventos">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableEventos" layoutX="25.0" layoutY="72.0" prefHeight="510.0" prefWidth="464.0">
+
+        <columns>
+          <TableColumn fx:id="nombreCol" prefWidth="150.0" text="Nombre">
+              <cellValueFactory><PropertyValueFactory property="nombre" /></cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="fechaCol" minWidth="0.0" prefWidth="94.0" text="Fecha">
+              <cellValueFactory><PropertyValueFactory property="fecha" /></cellValueFactory>
+          </TableColumn>
+            <TableColumn fx:id="horaCol" minWidth="0.0" prefWidth="96.0" text="Hora">
+                <cellValueFactory><PropertyValueFactory property="hora" /></cellValueFactory>
+            </TableColumn>
+          <TableColumn fx:id="lugarCol" minWidth="0.0" prefWidth="121.0" text="Lugar">
+              <cellValueFactory><PropertyValueFactory property="lugar" /></cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <Button layoutX="508.0" layoutY="72.0" mnemonicParsing="false" onAction="#doCreate" prefHeight="25.0" prefWidth="102.0" text="Crear" />
+      <Button layoutX="508.0" layoutY="115.0" mnemonicParsing="false" onAction="#doModify" prefHeight="25.0" prefWidth="102.0" text="Modificar" />
+      <Button layoutX="508.0" layoutY="160.0" mnemonicParsing="false" onAction="#doDelete" prefHeight="25.0" prefWidth="102.0" text="Eliminar" />
+      <Button layoutX="508.0" layoutY="201.0" mnemonicParsing="false" onAction="#addAsistente" prefHeight="44.0" prefWidth="102.0" text="Agregar Asistente" textAlignment="CENTER" wrapText="true" />
+      <Button layoutX="508.0" layoutY="263.0" mnemonicParsing="false" onAction="#doNotification" prefHeight="44.0" prefWidth="102.0" text="Notificar Asistentes" textAlignment="CENTER" wrapText="true" />
+   </children>
+</AnchorPane>

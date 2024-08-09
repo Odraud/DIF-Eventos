@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.dlsc.gemsfx.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.*?>
+
+<AnchorPane fx:id="anPane" prefHeight="640" prefWidth="646.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dif.eventos.EventosFormController">
+   <children>
+      <Label fx:id="lblTitulo" layoutX="68.0" layoutY="43.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnGuardar" layoutX="204.0" layoutY="430.0" mnemonicParsing="false" onAction="#doSave" prefHeight="25.0" prefWidth="85.0" text="Guardar" />
+      <Button fx:id="btnCancelar" layoutX="391.0" layoutY="430.0" mnemonicParsing="false" onAction="#doCancel" prefHeight="25.0" prefWidth="85.0" text="Cancelar" />
+      <TextField fx:id="txtNombreEvento" layoutX="68.0" layoutY="123.0" prefHeight="25.0" prefWidth="462.0" />
+      <TextField fx:id="txtLugar" layoutX="68.0" layoutY="200.0" prefHeight="25.0" prefWidth="462.0" />
+      <Label layoutX="71.0" layoutY="106.0" text="Nombre del evento" />
+      <Label layoutX="72.0" layoutY="183.0" text="Lugar del evento" />
+      <Label layoutX="71.0" layoutY="257.0" text="Fecha del evento" />
+      <Label layoutX="72.0" layoutY="337.0" text="Organizador" />
+
+      <TimePicker fx:id="tpHora" layoutX="352.0" layoutY="273.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="176.0" />
+      <Label layoutX="352.0" layoutY="257.0" text="Hora del evento" />
+      <CalendarPicker fx:id="cpFecha" layoutX="68.0" layoutY="274.0" maxWidth="-Infinity" prefHeight="26.0" prefWidth="245.0" />
+      <SearchableComboBox fx:id="cmbOrganizador" layoutX="68.0" layoutY="354.0" prefHeight="25.0" prefWidth="462.0" />
+
+   </children>
+</AnchorPane>
